@@ -1,0 +1,1378 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    background-color: #FFFFFF;
+    position: relative;
+}
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+/* -------------------- background animation -------------------- */
+.background-circles {
+    background: #FFFFFF;
+    width: 100%;
+    max-height: 50vh;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+        border-radius: 0;
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        opacity: 0;
+        border-radius: 50%;
+        transform: translateY(-1000px) rotate(720deg);
+    }
+}
+
+.circles div {
+    position: absolute;
+    display: block;
+    width: 2vw;
+    height: 4vh;
+    background: #5A94B6;
+    bottom: -150px;
+    animation: animate 25s linear infinite;
+}
+
+.circles div:nth-child(1) {
+    left: 25%;
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    animation-delay: 0s;
+}
+
+.circles div:nth-child(2) {
+    left: 10%;
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles div:nth-child(3) {
+    left: 70%;
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    animation-delay: 4s;
+}
+
+.circles div:nth-child(4) {
+    left: 40%;
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles div:nth-child(5) {
+    left: 65%;
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    animation-delay: 0s;
+}
+
+.circles div:nth-child(6) {
+    left: 75%;
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    animation-delay: 3s;
+}
+
+.circles div:nth-child(7) {
+    left: 35%;
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    animation-delay: 7s;
+}
+
+.circles div:nth-child(8) {
+    left: 50%;
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles div:nth-child(9) {
+    left: 20%;
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles div:nth-child(10) {
+    left: 85%;
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+
+/* -------------------- breathing_page -------------------- */
+.home-icon {
+    width: 20vw; 
+    height: 10vh;
+    margin-top: 25vh;
+}
+
+.home-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.breath-text {
+    text-align: center;
+    margin-top: 0vh;
+}
+
+.breath-in {
+    font-family: 'Yusei Magic', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12vw;
+    line-height: 28px;
+    color: #5A94B6;
+    margin: 4vh 4vw;
+    animation: breath-in ease-in-out alternate infinite;
+    animation-duration: 3.9s;
+    text-transform: uppercase;
+}
+
+@keyframes breath-in {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+}
+
+.breath-out {
+    font-family: 'Yusei Magic', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12vw;
+    line-height: 3vh;
+    color: #5A94B6;
+    margin: 6vh 4vw;
+    animation: breath-out ease-in-out alternate infinite;
+    animation-duration: 3.9s;
+    text-transform: uppercase;
+}
+
+@keyframes breath-out {
+    0% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.bottom-section {
+    margin: 16.5vh 20vw;
+    text-align: center;
+}
+
+.continue-button {
+    font-family: 'Yusei Magic', sans-serif;
+    background-color: #5A94B6;
+    color: #FFFFFF;
+    width: 80vw;
+    padding: 3vh 10vw;
+    border: none;
+    border-radius: 8vw;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: ease-in-out 0.5s;
+    z-index: 999;
+    text-transform: uppercase;
+}
+
+.continue-button:hover {
+    background-color: #5A94B4;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+/* -------------------- remedies_page -------------------- */
+.Remedy_Top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0vh 0vw;
+    width: 100%;
+    height: 30vh;
+    background: #FFFFFF;
+    color: #5A94B4;
+    padding: 1vh;
+}
+
+.rem_Logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.rem-name {
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 10vw;
+    font-weight: 400;
+    line-height: 4vh;
+    color: #5A94B6;
+    margin-top: 5vh;
+    text-transform: uppercase;
+}
+
+.Remedy_Middle {
+    margin: 25vh 5vw;
+    padding: 1vh 1vw;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.Remedy-wrapper {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 7vh;
+    margin: -3vh 0vw;
+    border-radius: 5vw;
+}
+
+.Remedy-heading {
+    font-family: 'Yusei Magic', sans-serif;
+    color: black;
+    font-size: 30px;
+    padding: 1vh 1vw;
+    margin: 1vh 5vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Remedy-list {
+    overflow-y: auto; 
+    max-height: calc(100vh - 230px);
+}
+
+.Remedy-entry {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0vh 1vw;
+    margin: 8vh 1vw;
+    border-bottom: 0.5px solid rgb(244, 244, 244);
+}
+
+.Remedy-info {
+    font-family: 'Yusei Magic', sans-serif;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 4vw;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+    color: #5A94B6;
+}
+
+.Remedy_Bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0vh;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    margin: 0vh 0vw;
+    z-index: 1;
+}
+
+.Remedy-button {
+    font-family: 'Yusei Magic', sans-serif;
+    background-color: transparent;
+    text-transform: uppercase;
+    width: 85vw;
+    height: 7vh;
+    cursor: pointer;
+    margin: 2vh 7vw;
+    border-radius: 8vw;
+    transition: all ease-in-out 0.4s;
+    z-index: 3;
+    background-color: white;
+    color: #5A94B6;
+    border: 1px solid #5A94B6;
+}
+
+.Remedy-button:hover {
+    transform: scale(1.05);
+    background-color: #5A94B6;
+    color: white;
+    border: none;
+}
+
+.Help-button {
+    font-family: 'Yusei Magic', sans-serif;
+    background-color: transparent;
+    text-transform: uppercase;
+    width: 85vw;
+    height: 7vh;
+    cursor: pointer;
+    margin: 2.5vh 7vw;
+    border-radius: 8vw;
+    transition: all ease-in-out 0.4s;
+    z-index: 3; 
+    background-color: white;
+    color: #5A94B6;
+    border: 1px solid #5A94B6;
+}
+
+.Help-button:hover {
+    transform: scale(1.05);
+    background-color: #5A94B6;
+    color: white;
+    border: none;
+}
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+/* -------------------- action_page -------------------- */
+.Remedies_PTop, .Remedies_PMid, .Remedies_PBot {
+    width: 100%;
+    max-width: 600vw;
+    text-align: center;
+}
+
+#mood-header img {
+    width: 10vw; 
+    height: 7vh;
+    margin: 8vh 5vw auto;
+    left: 50vw;
+}
+
+#mood-question h1 {
+    font-size: 4vw;
+    text-align: center;
+    text-decoration: underline;
+    color: #5A94B6;
+    font-weight: 400;
+    margin: 1vh 5vw;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+#input-prompt {
+    margin: 0vh 2vw; 
+}
+
+#calming-action {
+    font-family: 'Yusei Magic', sans-serif;
+    text-align: left;
+    width: 88%;
+    height: 25vh;
+    padding: 1vh 3vw;
+    margin-top: 2vh;
+    border: 1.5px solid rgb(214, 214, 214);
+    border-radius: 2vw;
+    color: #5A94B6;
+}
+
+#R_Buttons {
+    font-family: 'Yusei Magic', sans-serif;
+    display: flexbox;
+    justify-content: left;
+    margin: 1vh 5vw auto;
+}
+
+.R_BTN_1, .R_BTN_2, .R_BTN_3, .R_BTN_4 {
+    font-family: 'Yusei Magic', sans-serif;
+    width: 41vw;
+    height: 10vh;
+    margin: 1vh 1vw;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 1vh;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    transition: ease-in-out 0.5s;
+}
+
+.R_BTN_1 h1, .R_BTN_2 h1, .R_BTN_3 h1, .R_BTN_4 h1 {
+    font-size: 5vw;
+    text-align: left;
+    margin-left: 2vw;
+    color: #5A94B6;
+    transition: ease-in-out 0.5s;
+    display: flex;
+}
+
+.R_BTN_1 p, .R_BTN_2 p, .R_BTN_3 p, .R_BTN_4 p {
+    color: green;
+    text-align: left;
+    margin-left: 2vw;
+    word-spacing: 0.5vw;
+    letter-spacing: 0.3vw;
+    color: rgb(70, 70, 70);
+    transition: ease-in-out 0.5s;
+    display: flex;
+}
+
+.R_BTN_1:hover, .R_BTN_2:hover, .R_BTN_3:hover, .R_BTN_4:hover {
+    background-color: #5A94B6;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.R_BTN_1:hover h1, .R_BTN_2:hover h1, .R_BTN_3:hover h1, .R_BTN_4:hover h1 {
+    color: white;
+}
+
+.R_BTN_1:hover p, .R_BTN_2:hover p, .R_BTN_3:hover p, .R_BTN_4:hover p {
+    color: white;
+}
+
+.R_BTN_1.clicked, .R_BTN_2.clicked, .R_BTN_3.clicked, .R_BTN_4.clicked,
+.R_BTN_1.clicked h1, .R_BTN_2.clicked h1, .R_BTN_3.clicked h1, .R_BTN_4.clicked h1,
+.R_BTN_1.clicked p, .R_BTN_2.clicked p, .R_BTN_3.clicked p, .R_BTN_4.clicked p   {
+    visibility: visible;
+    background-color: #5A94B6;
+    color: white;
+}
+
+#bottom-section {
+    margin-top: 5vh;
+}
+
+.remedies_sign {
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 2vh;
+    padding: 2vh 40vw;
+    border: 1px solid #5A94B6;
+    border-radius: 10vw;
+    cursor: pointer;
+    background-color: transparent;
+    color: #5A94B6;
+    transition: ease-in-out 0.5s;
+}
+
+.remedies_sign:hover {
+    transform: scale(1.05);
+    background-color: #5A94B6;
+    color: white;
+    border: none;
+}
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+/* -------------------- rating_page -------------------- */
+.rating_top, .rating_mid, .rating_bot {
+    width: 100%;
+    max-width: 600vw;
+    text-align: center;
+}
+
+#rating_header img {
+    width: 10vw; 
+    height: 7vh;
+    margin: 8vh 5vw auto;
+    left: 50vw;
+}
+
+#rating_question h1 {
+    font-size: 10vw;
+    text-align: center;
+    color: #5A94B6;
+    font-weight: 400;
+    margin: 1vh 5vw;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+#rating_buttons {
+    font-family: 'Yusei Magic', sans-serif;
+    display: flexbox;
+    justify-content: left;
+    margin: 12vh 5vw auto;
+}
+
+.Rr_BTN_1, .Rr_BTN_2, .Rr_BTN_3, .Rr_BTN_4 {
+    font-family: 'Yusei Magic', sans-serif;
+    width: 41vw;
+    height: 10vh;
+    margin: 1vh 1vw;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 1vh;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    transition: ease-in-out 0.5s;
+}
+
+.Rr_BTN_1 h1, .Rr_BTN_2 h1, .Rr_BTN_3 h1, .Rr_BTN_4 h1 {
+    font-size: 5vw;
+    text-align: left;
+    margin-left: 2vw;
+    color: #5A94B6;
+    transition: ease-in-out 0.5s;
+    display: flex;
+}
+
+.Rr_BTN_1 p, .Rr_BTN_2 p, .Rr_BTN_3 p, .Rr_BTN_4 p {
+    color: green;
+    text-align: left;
+    margin-left: 2vw;
+    word-spacing: 0.5vw;
+    letter-spacing: 0.3vw;
+    color: rgb(70, 70, 70);
+    transition: ease-in-out 0.5s;
+    display: flex;
+}
+
+.Rr_BTN_1:hover, .Rr_BTN_2:hover, .Rr_BTN_3:hover, .Rr_BTN_4:hover {
+    background-color: #5A94B6;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.Rr_BTN_1:hover h1, .Rr_BTN_2:hover h1, .Rr_BTN_3:hover h1, .Rr_BTN_4:hover h1 {
+    color: white;
+}
+
+.Rr_BTN_1:hover p, .Rr_BTN_2:hover p, .Rr_BTN_3:hover p, .Rr_BTN_4:hover p {
+    color: white;
+}
+
+.Rr_BTN_1.clicked, .Rr_BTN_2.clicked, .Rr_BTN_3.clicked, .Rr_BTN_4.clicked,
+.Rr_BTN_1.clicked h1, .Rr_BTN_2.clicked h1, .Rr_BTN_3.clicked h1, .Rr_BTN_4.clicked h1,
+.Rr_BTN_1.clicked p, .Rr_BTN_2.clicked p, .Rr_BTN_3.clicked p, .Rr_BTN_4.clicked p   {
+    visibility: visible;
+    background-color: #5A94B6;
+    color: white;
+}
+
+#rating_bot {
+    margin-top: 5vh;
+}
+
+.rating_journ {
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 2vh;
+    width: 85vw;
+    padding: 2vh 10vw;
+    border: 1px solid #5A94B6;
+    border-radius: 10vw;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #5A94B6;
+    transition: ease-in-out 0.5s;
+}
+
+.rating_journ:hover {
+    transform: scale(1.05);
+    background-color: #5A94B6;
+    color: white;
+    border: none;
+}
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+/* -------------------- remedies2_page -------------------- */
+.Rem2_Top, .Rem2_Mid, .Rem2_Bot {
+    width: 100%;
+    max-width: 600px; 
+    text-align: center;
+}
+
+#mood-header-2 img {
+    width: 10vw; 
+    height: 7vh;
+    border-radius: 50%;
+    margin: 5vh 5vw auto;
+}
+
+#mood-question-2 h1 {
+    font-size: 6vw;
+    text-align: left;
+    margin: 5vh 5vw;
+    color: #5A94B6;
+    font-family: 'Yusei Magic', sans-serif;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+#text-input {
+    margin: 0vh 0vw;
+}
+
+textarea {
+    font-family: 'Yusei Magic', sans-serif;
+    width: 90%;
+    height: 25vh;
+    padding: 2vw;
+    border: 1.5px solid #5A94B6;
+    border-radius: 1.5vw;
+    resize: both; 
+}
+
+#word-count {
+    font-size: 2.5vw;
+    color: #5A94B6;
+    margin: 1vh 6vw;
+    text-align: left;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+#bottom-section-2 {
+    margin-top: 15vh;
+}
+
+#continue-button-2{
+    font-size: 2.5vw;
+    font-family: 'Yusei Magic', sans-serif;
+    padding: 2vh 40vw;
+    border: 0.3vw solid #5A94B6;
+    border-radius: 8vw;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #5A94B6;
+    transition: ease-in-out 0.5s;
+    margin: 2vh 1vw;
+}
+
+#continue-button-2:hover{
+    transform: scale(1.05);
+    background-color: #5A94B6;
+    color: white;
+    border: none;
+}
+
+#im-okay-button {
+    font-size: 2.5vw;
+    font-family: 'Yusei Magic', sans-serif;
+    padding: 2vh 40vw;
+    border: 0.3vw solid #5A94B6;
+    border-radius: 8vw;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #5A94B6;
+    transition: ease-in-out 0.5s;
+    margin: 5px;
+}
+
+#im-okay-button:hover {
+    transform: scale(1.05);
+    background-color: #5A94B6;
+    color: white;
+    border: none;
+}
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+/* -------------------- save_page -------------------- */
+.save_top, .save_bot {
+    width: 100%;
+    max-width: 600px; 
+    text-align: center;
+}
+
+#save_header img {
+    width: 10vw; 
+    height: 7vh;
+    border-radius: 50%;
+    margin: 5vh 5vw auto;
+}
+
+#feeling h1 {
+    font-size: 10vw;
+    word-spacing: 1vw;
+    letter-spacing: 1.5vw;
+    text-align: center;
+    margin: 5vh 5vw;
+    color: #5A94B6;
+    font-family: 'Yusei Magic', sans-serif;
+    font-weight: 400;
+}
+
+#save_event {
+    font-size: 5vw;
+    text-align: center;
+    margin: 15vh 5vw;
+    color: #5A94B6;
+    font-family: 'Yusei Magic', sans-serif;
+    font-weight: 400;
+}
+
+#save_bot {
+    margin-top: 1vh;
+}
+
+#save_record{
+    font-size: 2.5vw;
+    font-family: 'Yusei Magic', sans-serif;
+    padding: 2vh 40vw;
+    border: 0.3vw solid #5A94B6;
+    border-radius: 8vw;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #5A94B6;
+    transition: ease-in-out 0.5s;
+    margin: 2vh 1vw;
+}
+
+#save_record:hover{
+    transform: scale(1.05);
+    background-color: #5A94B6;
+    color: white;
+    border: none;
+}
+
+#discard_record {
+    font-size: 2.5vw;
+    font-family: 'Yusei Magic', sans-serif;
+    padding: 2vh 42vw;
+    border: 0.3vw solid #5A94B6;
+    border-radius: 8vw;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #5A94B6;
+    transition: ease-in-out 0.5s;
+    margin: 2vh 1vw;
+}
+
+#discard_record:hover {
+    transform: scale(1.05);
+    background-color: #5A94B6;
+    color: white;
+    border: none;
+}
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+/* -------------------- home_page -------------------- */
+.burn-section {
+    width: 100%;
+    border-radius: 50%;
+    position: fixed; /* Add this line to make it fixed */
+    top: 0; /* Add this line to position it at the top */
+    left: 0; /* Add this line to position it at the left */
+    z-index: 10; /* Add this line to ensure it stays on top */
+}
+
+.ribbon {
+    margin: 0;
+    width: 100%;
+    height: 40vh;
+    background-color: #5A94B6;
+    border-radius: 0 0 10% 10%;
+}
+
+.home-image {
+    margin: auto;
+    width: 100%;
+}
+
+.home-image img {
+    width: 10vw; 
+    height: 6vh;
+    border-radius: 50%;
+    margin: 2vh 10vw auto;
+}
+
+.textarea {
+    background-color: white;
+    width: 90%;
+    height: 27vh;
+    margin: 1vh 5vw;
+    border-radius: 5vw;
+}
+
+.textarea .heading {
+    color: #5A94B6;
+    font-size: 2vw;
+    font-weight: 400;
+    text-decoration: underline;
+    font-family: 'Yusei Magic', sans-serif;
+    margin: 1vh 5vw;
+    padding: 0.5vh;
+}
+
+.burn-journal textarea {
+    background-color: white;
+    margin: 1vh 4.5vw;
+    border-radius: 5vw;
+    color: #5A94B6;
+    height: 17.5vh;
+}
+
+.burn-button-box {
+    background-color: transparent;
+    width: 20%;
+    margin: -7vh 67vw;
+    display: flex;
+}
+
+.burn-button-box #burn-button {
+    background-color: white;
+    border: none;
+    padding-right: 3vw;
+    color: #5A94B6;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.burn-button-box img {
+    height: 4vh;
+    cursor: pointer;
+}
+
+.burn-button-box #burn-button:hover, .burn-button-box img:hover {
+    transform: scale(1.05);
+    background-color: transparent;
+}
+
+.journal-section {
+    margin-top: 0vh; /* Add this line to push it below the fixed .burn-section */
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - 40vh); /* Adjust the height */
+    overflow-y: auto; /* Add this line to make it scrollable */
+}
+
+.J-heading {
+    text-align: left;
+    position: fixed;
+    background: #FFFFFF;
+    width: 100%;
+    height: 7vh;
+    margin: 0vh 0vw;
+    padding-left: 5vw;
+    border-bottom: 1px solid #5A94B6;
+    font-family: 'Yusei Magic', sans-serif;
+    color: #5A94B6;
+    z-index: 999;
+}
+
+.current-day {
+    display: flex;
+    align-items: center;
+    margin-top: 4.5vh;
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+.Day {
+    position: relative;
+    font-size: 3vw;
+    font-family: 'Yusei Magic', sans-serif;
+    margin: 1vh 3vw;
+    padding-top: 2vh;
+    color: black;
+}
+
+.placeholder {
+    width: 5px;
+    height: 1px;
+    background-color: #5A94B6;
+    font-family: 'Yusei Magic', sans-serif;
+    margin-top: 4vh
+}
+
+.short-date {
+    font-size: 3vw;
+    padding-top: 2vh;
+    margin: 1vh 3vw;
+    color: black;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.journal-list {
+    max-height: calc(100vh - 230px - 40vh); /* Adjust the max-height */
+}
+
+.journal-entry {
+    font-family: 'Yusei Magic', sans-serif;
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #5A94B6;
+    border-radius: 5vh;
+    padding: 10px;
+    margin: 1vh 6vw;
+    height: 10vh;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.journal-entry:hover {
+    transform: scale(1.05);
+}
+
+.journal-logo img {
+    padding: 1vw 2vw 0vw 2vw;
+}
+
+.journal-info {
+    color: #5A94B6;
+    font-family: 'Yusei Magic', sans-serif;
+    display: block;
+    letter-spacing: 0.5vw;
+}
+
+.journal-info .journal-time {
+    display: block;
+    margin: 1vh 1vw;
+    font-size: 2vw;
+    color: black;
+    letter-spacing: 0.3vw;
+}
+
+#Bottom-Section-LP {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-top: 0.5px solid #5A94B6;
+    z-index: 999;
+}
+
+.circle-button {
+    background-color: transparent;
+    border: none;
+    color: #5A94B6;
+    transition: all ease-in-out 0.3s;
+    font-family: 'Yusei Magic', sans-serif;
+    cursor: pointer;
+}
+
+.circle-button:hover {
+    transform: scale(1.2);
+}
+
+#content-label {
+    width: 20vw;
+    height: 8vh;
+    margin-top: -5vh;
+    background-color: #5A94B6;
+    border-radius: 10vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #5A94B6;
+    outline: none;
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: 'Yusei Magic', sans-serif;
+    transition: all ease-in-out 0.3s;
+}
+
+.upload-content:hover, #content-label:hover {
+    background-color: white;
+    color: #5A94B6;
+    transform: scale(1.2);
+}
+
+.triangle-button {
+    background-color: transparent;
+    border: none;
+    transition: all ease-in-out 0.3s;
+    color: #5A94B6;
+    font-family: 'Yusei Magic', sans-serif;
+    cursor: pointer;
+}
+
+.triangle-button:hover {
+    background-color: transparent;
+    transform: scale(1.2);
+}
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+/* -------------------- record_page -------------------- */
+.record_top, .record_bot {
+    width: 100%;
+    max-width: 600px; 
+    text-align: center;
+}
+
+.record_header img {
+    width: 10vw; 
+    height: 7vh;
+    border-radius: 50%;
+    margin: 5vh 5vw auto;
+}
+
+.r_feeling img {
+    width: 12vw;
+    height: 8vh;
+    margin-top: 3vh;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.r_feeling img:hover {
+    transform: scale(1.2);
+}
+
+.record_feeling_title {
+    color: #5A94B6;
+    margin: 0vh 1vw;
+    font-size: 10vw;
+    font-family: 'Yusei Magic', sans-serif;
+    font-weight: 400;
+}
+
+.record_date {
+    width: 100%;
+    position: absolute;
+}
+
+.record_date .date_of_record {
+    color: black;
+    font-size: 3.5vw;
+    font-family: 'Yusei Magic', sans-serif;
+    font-weight: 200;
+    margin-bottom: 1vh;
+}
+
+.record_date .time_of_record {
+    color: rgb(137, 137, 137);
+    font-size: 2vw;
+    font-weight: 100;
+    letter-spacing: 0.2vw;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.record_information {
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    margin-top: 7vh;
+}
+
+.record_information .information_title {
+    color: #5A94B6;
+    font-size: 4vw;
+    text-decoration: underline;
+    margin: 1vh 6vw;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.information_type_box {
+    border: 1px solid #5A94B6;
+    border-radius: 5vw;
+    width: 90%;
+    height: 8vh;
+    margin-top: 1vh;
+    background-color: #FFFFFF;
+}
+
+.information_type_box .information_type {
+    color: #5A94B6;
+    width: auto;
+    padding: 1vh;
+    margin: 1.5vh 5vw;
+    position: absolute;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 3vw;
+}
+
+.information_description {
+    width: 100%;
+    padding-top: 3vh;
+    overflow-y: auto;
+    height: calc(100vh - 50vh); /* Adjust based on the height of the fixed sections */
+    position: relative;
+    z-index: 1; /* Ensure it's below the fixed sections */
+}
+
+.d_title {
+    color: #5A94B6;
+    padding-top: 2vh;
+    padding-left: 6vw;
+    font-weight: 400;
+    text-decoration: underline;
+    border-top: 1px solid #5A94B6;
+    font-size: 5vw;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.description_content {
+    color: #5A94B6;
+    height: fit-content;
+    margin: 3vh 5vw;
+    text-align: justify;
+    border: 1px solid #5A94B6;
+    padding: 3vw;
+    border-radius: 5vw;
+    background-color: #FFFFFF;
+}
+
+.description_info {
+    color: #5A94B6;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: #FFFFFF;
+}
+
+#Bottom-Section-LP2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-top: 0.5px solid #5A94B6;
+    z-index: 999;
+}
+
+.circle-button2 {
+    background-color: transparent;
+    border: none;
+    color: #5A94B6;
+    transition: all ease-in-out 0.3s;
+    font-family: 'Yusei Magic', sans-serif;
+    cursor: pointer;
+}
+
+.circle-button2:hover {
+    transform: scale(1.2);
+}
+
+#content-label2 {
+    width: 20vw;
+    height: 8vh;
+    margin-top: 0vh;
+    background-color: #5A94B6;
+    border-radius: 10vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #5A94B6;
+    outline: none;
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: 'Yusei Magic', sans-serif;
+    transition: all ease-in-out 0.3s;
+}
+
+.upload-content2:hover, #content-label2:hover {
+    background-color: white;
+    color: #5A94B6;
+    transform: scale(1.2);
+}
+
+.triangle-button2 {
+    background-color: transparent;
+    border: none;
+    transition: all ease-in-out 0.3s;
+    color: #5A94B6;
+    font-family: 'Yusei Magic', sans-serif;
+    cursor: pointer;
+}
+
+.triangle-button2:hover {
+    background-color: transparent;
+    transform: scale(1.2);
+}
+
+#deleteRecordBtn {
+    position: fixed;
+    bottom: 13vh;
+    width: 92%;
+    height: 8vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #5A94B6;
+    color: white;
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 10vw;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#deleteRecordBtn:hover {
+    transform: translateX(-50%) scale(1.05);
+    background-color: white;
+    color: #5A94B6;
+    border: 1px solid #5A94B6;
+}
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+/* -------------------- journal_page -------------------- */
+.home-image2 {
+    margin: auto;
+    width: 100%;
+}
+
+.home-image2 img {
+    width: 10vw; 
+    height: 6vh;
+    border-radius: 50%;
+    margin-left: 40vw;
+    margin-top: 10vh;
+}
+
+.journal-section2 {
+    margin-top: 3vh; /* Add this line to push it below the fixed .burn-section */
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - 32vh); /* Adjust the height */
+    overflow-y: auto; /* Add this line to make it scrollable */
+}
+
+.J-heading2 {
+    text-align: left;
+    position: fixed;
+    background: #FFFFFF;
+    width: 100%;
+    height: 7vh;
+    margin: 0vh 0vw;
+    padding-left: 5vw;
+    border-bottom: 1px solid #5A94B6;
+    font-family: 'Yusei Magic', sans-serif;
+    color: #5A94B6;
+    z-index: 999;
+}
+
+.current-day2 {
+    display: flex;
+    align-items: center;
+    margin-top: 4.5vh;
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+.Day2 {
+    position: relative;
+    font-size: 3vw;
+    font-family: 'Yusei Magic', sans-serif;
+    margin: 1vh 3vw;
+    padding-top: 2vh;
+    color: black;
+}
+
+.placeholder2 {
+    width: 5px;
+    height: 1px;
+    background-color: #5A94B6;
+    font-family: 'Yusei Magic', sans-serif;
+    margin-top: 4vh
+}
+
+.short-date2 {
+    font-size: 3vw;
+    padding-top: 2vh;
+    margin: 1vh 3vw;
+    color: black;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.journal-list2 {
+    max-height: calc(100vh - 230px - 40vh); /* Adjust the max-height */
+}
+
+.journal-entry2 {
+    font-family: 'Yusei Magic', sans-serif;
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #5A94B6;
+    border-radius: 5vh;
+    padding: 10px;
+    margin: 1vh 6vw;
+    height: 10vh;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+
+.journal-entry2:hover {
+    transform: scale(1.05);
+}
+
+.journal-logo2 img {
+    padding: 1vw 2vw 0vw 2vw;
+}
+
+.journal-info2 {
+    color: #5A94B6;
+    font-family: 'Yusei Magic', sans-serif;
+    display: block;
+    letter-spacing: 0.5vw;
+}
+
+.journal-info2 .journal-time2 {
+    display: block;
+    margin: 1vh 1vw;
+    font-size: 2vw;
+    color: black;
+    letter-spacing: 0.3vw;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */

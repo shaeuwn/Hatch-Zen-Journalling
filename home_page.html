@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- <script src="Script.js"></script> -->
+    <title>HATCH Journal</title>
+</head>
+<body>
+    <div class="burn-section" id="burn-section">
+        <div class="ribbon">
+            <div class="home-image">
+                <img src="Images/Icon_2.png">
+            </div>
+            <div class="textarea">
+                <div class="heading">
+                    <h1>Tell me a good thing about today</h1>
+                </div>
+                <div class="burn-journal">
+                    <textarea placeholder="Write your journal entry here..."></textarea>
+                </div>
+                <div class="burn-button-box">
+                    <button id="burn-button" onclick="burn()">Burn Now</button>
+                    <img src="Images/Burn.png" onclick="burn()">
+                </div>
+            </div>
+        </div>
+        <div class="journal-section">
+            <div class="journal-heading">
+                <h1 class="J-heading">Journals</h1>
+            </div>
+            <div class="journal-list">
+                <!-- Current Day -->
+                <div class="current-day">
+                    <div class="Day" id="day">Friday</div>
+                    <div class="placeholder"></div>
+                    <span class="short-date">Sep 8</span>
+                </div>
+                <!-- Journal Entry -->
+                <div class="journal-entry">
+                    <div class="journal-logo">
+                        <img src="Images/Featured icon.png">
+                    </div>
+                    <div class="journal-info">
+                        <span class="journal-title">Journal Entry 1</span>
+                        <span class="journal-time">12:00 PM</span>
+                    </div>
+                </div>
+                <!-- Journal Entry -->
+                <div class="journal-entry">
+                    <div class="journal-logo">
+                        <img src="Images/Featured icon.png">
+                    </div>
+                    <div class="journal-info">
+                        <span class="journal-title">Journal Entry 2</span>
+                        <span class="journal-time">12:30 PM</span>
+                    </div>
+                </div>
+                <!-- ... Add more entries as needed ... -->
+            </div>
+            <div class="journal-list">
+                <!-- Current Day -->
+                <div class="current-day">
+                    <div class="Day" id="day">Friday</div>
+                    <div class="placeholder"></div>
+                    <span class="short-date">Sep 8</span>
+                </div>
+                <!-- Journal Entry -->
+                <div class="journal-entry">
+                    <div class="journal-logo">
+                        <img src="Images/Featured icon.png">
+                    </div>
+                    <div class="journal-info">
+                        <span class="journal-title">Journal Entry 1</span>
+                        <span class="journal-time">12:00 PM</span>
+                    </div>
+                </div>
+                <!-- Journal Entry -->
+                <div class="journal-entry">
+                    <div class="journal-logo">
+                        <img src="Images/Featured icon.png">
+                    </div>
+                    <div class="journal-info">
+                        <span class="journal-title">Journal Entry 2</span>
+                        <span class="journal-time">12:30 PM</span>
+                    </div>
+                </div>
+                <!-- ... Add more entries as needed ... -->
+            </div>
+            <div class="journal-list">
+                <!-- Current Day -->
+                <div class="current-day">
+                    <div class="Day" id="day">Friday</div>
+                    <div class="placeholder"></div>
+                    <span class="short-date">Sep 8</span>
+                </div>
+                <!-- Journal Entry -->
+                <div class="journal-entry">
+                    <div class="journal-logo">
+                        <img src="Images/Featured icon.png">
+                    </div>
+                    <div class="journal-info">
+                        <span class="journal-title">Journal Entry 1</span>
+                        <span class="journal-time">12:00 PM</span>
+                    </div>
+                </div>
+                <!-- Journal Entry -->
+                <div class="journal-entry">
+                    <div class="journal-logo">
+                        <img src="Images/Featured icon.png">
+                    </div>
+                    <div class="journal-info">
+                        <span class="journal-title">Journal Entry 2</span>
+                        <span class="journal-time">12:30 PM</span>
+                    </div>
+                </div>
+                <!-- ... Add more entries as needed ... -->
+            </div>
+            <div class="journal-list">
+                <!-- Current Day -->
+                <div class="current-day">
+                    <div class="Day" id="day">Friday</div>
+                    <div class="placeholder"></div>
+                    <span class="short-date">Sep 8</span>
+                </div>
+                <!-- Journal Entry -->
+                <div class="journal-entry">
+                    <div class="journal-logo">
+                        <img src="Images/Featured icon.png">
+                    </div>
+                    <div class="journal-info">
+                        <span class="journal-title">Journal Entry 1</span>
+                        <span class="journal-time">12:00 PM</span>
+                    </div>
+                </div>
+                <!-- Journal Entry -->
+                <div class="journal-entry">
+                    <div class="journal-logo">
+                        <img src="Images/Featured icon.png">
+                    </div>
+                    <div class="journal-info">
+                        <span class="journal-title">Journal Entry 2</span>
+                        <span class="journal-time">12:30 PM</span>
+                    </div>
+                    <div class="journal-info">
+                        <span class="journal-title">Journal Entry 2</span>
+                        <span class="journal-time">12:30 PM</span>
+                    </div>
+                </div>
+                <!-- ... Add more entries as needed ... -->
+            </div>
+        </div>
+    </div>
+    <div id="Bottom-Section-LP">
+        <button class="circle-button" id="openDiary" onclick="openDiary()">
+            <img src = "Images/Journal.png">
+            <p>Journals</p>
+        </button>
+        <label for="upload-content" id="content-label" onclick="uploadContent()">&#43;</label>
+        <input type="file" id="upload-content" accept="video/*" style="display: none;">
+        <button class="triangle-button" id="openMemory" onclick="openMemory()">
+            <img src = "Images/Memory.png">
+            <p>All Memory</p>
+        </button>
+    </div>
+    </body>
+</html>
